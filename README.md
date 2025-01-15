@@ -14,9 +14,9 @@
   2. Run the Script
     - Open a terminal and navigate to the directory containing the script.
 
-**Execute the script using:**
-  python3 scanner.py <target>
-Replace <target> with the IP address or hostname of the target machine.
+###**Execute the script using:**
+  **python3 scanner.py <target>**  
+Replace <target> with the IP address or hostname of the target machine.  
 
 **Example**
 python3 scanner.py 192.168.1.1
