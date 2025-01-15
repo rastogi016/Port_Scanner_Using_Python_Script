@@ -10,9 +10,9 @@
   - Easy to use with a simple command-line interface.
 ## **Usage**
   1. Prerequisites
-  - Python 3.x installed on your system.
+    - Python 3.x installed on your system.
   2. Run the Script
-  - Open a terminal and navigate to the directory containing the script.
+    - Open a terminal and navigate to the directory containing the script.
 
 **Execute the script using:**
   python3 scanner.py <target>
@@ -23,12 +23,12 @@ python3 scanner.py 192.168.1.1
 
 **Output Example**
 --------------------------------------------------
-Scanning target: 192.168.1.1
-Start time: 2025-01-16 14:30:00
+- Scanning target: 192.168.1.1
+- Start time: 2025-01-16 14:30:00
 --------------------------------------------------
-Port 22 is open
-Port 80 is open
-Port 443 is open
+Port 22 is open\n
+Port 80 is open\n
+Port 443 is open\n
 ...
 Scan Completed !!
 
