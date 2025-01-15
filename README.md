@@ -1,34 +1,48 @@
+# **GitHub README for Port Scanner**
+## **Port Scanner**
+  A Python-based multithreaded port scanning tool that scans all TCP ports (1-65535) on a specified target host to identify open ports.
 
-Port Scanner Using Python
+## **Features**
+  - Scans all TCP ports (1 to 65535) on a target machine.
+  - Utilizes multithreading for faster scanning.
+  - Identifies open ports and displays results in real-time.
+  - Handles socket errors and provides appropriate error messages.
+  - Easy to use with a simple command-line interface.
+## **Usage**
+  1. Prerequisites
+  - Python 3.x installed on your system.
+  2. Run the Script
+  - Open a terminal and navigate to the directory containing the script.
 
-This is a simple port scanner developed using Python that scans a range of ports on a given target IP address or hostname. It uses the socket and sys libraries for network communication and handling the command-line interface.
+**Execute the script using:**
+  python3 scanner.py <target>
+Replace <target> with the IP address or hostname of the target machine.
 
-Features:
-  Scans ports in the range of 50-85 on the target.
-  Displays the open ports on the target.
-  Handles exceptions like invalid arguments, connection issues, or invalid hostnames.
-  Includes a banner displaying the start time of the scan and target being scanned.
-  
-Requirements:
-  Python 3.x
-  
-Usage:
-  Clone the repository or download the script.
-  Open a terminal in the project directory.
-  Run the script with the following command:
+**Example**
+python3 scanner.py 192.168.1.1
 
-python3 scanner.py <target_ip_or_hostname>
+**Output Example**
+--------------------------------------------------
+Scanning target: 192.168.1.1
+Start time: 2025-01-16 14:30:00
+--------------------------------------------------
+Port 22 is open
+Port 80 is open
+Port 443 is open
+...
+Scan Completed !!
 
+## **Error Handling**
+  1. Invalid Arguments: If incorrect arguments are provided:
+     - Invalid number of arguments
+     - Usage: python Oports.py <target>
+    
+  2. Host Resolution Error: If the hostname cannot be resolved:
+     - Error: Unable to resolve the hostname <target>
+  3. Socket Errors:
+     
+**The script will display detailed error messages for any socket-related issues.**
 
-Code Explanation:
-Input Handling: The script accepts a target IP address or hostname as a command-line argument. If the argument is missing or incorrect, it will display the correct syntax for usage.
-
-Port Scanning: The script iterates through a range of ports (50 to 85), attempts to connect to each one, and checks if the connection is successful (indicating the port is open).
-
-Exception Handling:
-
-KeyboardInterrupt: Exits the program gracefully when the user interrupts the scan.
-socket.gaierror: Handles errors when the hostname cannot be resolved to an IP address.
-socket.error: Catches connection errors when unable to connect to the target.
-
-
+### *Important Notes*
+  **Permissions:**
+  - On some systems, scanning certain ports may require administrative privileges.
