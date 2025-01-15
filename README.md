@@ -26,11 +26,11 @@ python3 scanner.py 192.168.1.1
 - Scanning target: 192.168.1.1
 - Start time: 2025-01-16 14:30:00
 --------------------------------------------------
-Port 22 is open\n
-Port 80 is open\n
-Port 443 is open\n
-...
-Scan Completed !!
+Port 22 is open  
+Port 80 is open  
+Port 443 is open  
+...  
+Scan Completed !!  
 
 ## **Error Handling**
   1. Invalid Arguments: If incorrect arguments are provided:
